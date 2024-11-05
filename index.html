@@ -145,30 +145,94 @@
         </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="section">
-        <div class="content-container">
-            <h3>Certifications</h3>
-            <ul>
-                <li>IBM Certified Data Scientist</li>
-                <li>Microsoft Project Management Professional</li>
-                <li>WorldQuant University - Data Science</li>
-                <li>Africa Leadership X Alumni - Data Science</li>
-            </ul>
-        </div>
-    </section>
+<!-- Certifications Section -->
+<section id="certifications" class="section">
+    <div class="content-container certifications-box">
+        <h3 class="section-title">Certifications</h3>
+        <ul>
+            <li>IBM Certified Data Scientist</li>
+            <li>Microsoft Project Management Professional</li>
+            <li>WorldQuant University - Data Science</li>
+            <li>Africa Leadership X Alumni - Data Science</li>
+        </ul>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="content-container">
-            <h3>Contact</h3>
-            <p>Do you want to turn your data into insights? Feel free to reach out through any of the channels listed below:</p>
-            <div class="contacts">
-                <p>+254791303899 / +254791234034</p>
-                <p>mikemurango00@gmail.com</p>
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="content-container">
+        <h3 class="section-title">Contact</h3>
+        <p>Do you want to turn your data into insights? Feel free to reach out through any of the channels below:</p>
+        <div class="contact-dropdown">
+            <button class="dropdown-btn">How can I reach you via WhatsApp or call?</button>
+            <div class="dropdown-content">
+                <p>WhatsApp/Call: +254791303899</p>
+                <p>Alternate Call: +254791234034</p>
+            </div>
+            
+            <button class="dropdown-btn">How can I email you?</button>
+            <div class="dropdown-content">
+                <p>Email: mikemurango00@gmail.com</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<style>
+    /* Boxed Style for Certifications */
+    .certifications-box {
+        background-color: #2b2b2d;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 600px;
+        margin: 20px auto;
+        color: #f5f5f7;
+    }
+
+    /* Title Color for Certifications and Contact Sections */
+    .section-title {
+        color: #007acc; /* Distinct color for titles */
+        font-size: 1.5em;
+    }
+
+    /* Dropdown Style for Contact Section */
+    .contact-dropdown {
+        margin-top: 15px;
+    }
+
+    .dropdown-btn {
+        background-color: #1d1d1f;
+        color: #f5f5f7;
+        padding: 12px;
+        font-size: 16px;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .dropdown-btn:hover {
+        background-color: #3b3b3d;
+    }
+
+    .dropdown-content {
+        display: none;
+        padding: 10px;
+        background-color: #2b2b2d;
+        border-radius: 8px;
+        color: #f5f5f7;
+        margin-top: -10px;
+        margin-bottom: 15px;
+    }
+
+    .dropdown-btn:focus + .dropdown-content {
+        display: block;
+    }
+</style>
+
 
     <footer>
         <p>&copy; 2024 Mike Murango | All rights reserved</p>
