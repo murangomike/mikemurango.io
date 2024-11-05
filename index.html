@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MisTech Solutions</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Murango - Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="#certifications" class="nav-link">Certifications</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="content-container">
+            <div class="hero-content">
+                <img src="images/portrait.jpg" alt="Mike Murango Portrait" class="portrait">
+                <div class="intro">
+                    <h1>Mike Murango</h1>
+                    <h2>Data Scientist</h2>
+                    <p>Experience in data analytics, predictive modeling, credit risk modeling, fraud detection, recommender systems, and machine learning modeling.</p>
+                    <div class="contacts">
+                        <p>+254791303899 / +254791234034</p>
+                        <p>mikemurango00@gmail.com</p>
+                        <a href="https://www.linkedin.com/in/mike-murango-3108b4156/" target="_blank" class="btn">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="content-container">
+            <h3>Services</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h4>Data Analytics</h4>
+                    <p>In-depth data analysis services to uncover valuable insights from complex datasets, driving informed decisions and business growth.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Predictive Modeling</h4>
+                    <p>Building powerful predictive models to help businesses anticipate trends, optimize operations, and gain a competitive edge.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Credit Risk Modeling</h4>
+                    <p>Specialized models that assess credit risk, minimizing potential losses and improving loan decision accuracy for financial institutions.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Fraud Detection</h4>
+                    <p>Advanced fraud detection algorithms that identify suspicious activity, safeguarding assets and maintaining customer trust.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Recommendation Systems</h4>
+                    <p>Personalized recommendation systems that enhance customer engagement and drive product discovery for e-commerce platforms.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Machine Learning Solutions</h4>
+                    <p>End-to-end machine learning solutions from model development to deployment, customized to address specific business challenges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="content-container">
+            <h3>Portfolio</h3>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="images/car_price_analysis.png" alt="Car Price Analysis">
+                    <div class="project-info">
+                        <a href="#" class="project-link" onclick="openNotebook('CAR_PRICE_ANALYSIS.ipynb')">Car Price Analysis</a>
+                        <p>Analyzing car prices based on various features.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/ncba_review.png" alt="NCBA Bank Employee Review Analysis">
+                    <div class="project-info">
+                        <a href="#" class="project-link" onclick="openNotebook('NCBA_BANK_REVIEW_ANALYSIS.ipynb')">NCBA Bank Employee Review Analysis</a>
+                        <p>Analyzing employee reviews for NCBA Bank.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/football_predictions.png" alt="Football Player Predictions">
+                    <div class="project-info">
+                        <a href="#" class="project-link" onclick="openNotebook('football_player_predictions_using_Random_Forest_&_KNN.ipynb')">Football Player Predictions</a>
+                        <p>Predicting football player performance using Random Forest and KNN.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/insurance_claim.png" alt="Insurance Claim Prediction">
+                    <div class="project-info">
+                        <a href="#" class="project-link" onclick="openNotebook('insurance_claim_prediction_using_Regression_and_Random_Forest (3) (1).ipynb')">Insurance Claim Prediction</a>
+                        <p>Predicting insurance claims using Regression and Random Forest.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/customer_churn.png" alt="Customer Churn Predictive Analytics">
+                    <div class="project-info">
+                        <a href="#" class="project-link" onclick="openNotebook('CUSTOMER CHURN PREDICTIVE ANALYTICS USING LOGISTIC REGRESSION AND NEURAL NETWORKS.ipynb')">Customer Churn Analysis</a>
+                        <p>Using Logistic Regression and Neural Networks to predict customer churn.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/ecommerce_reviews.png" alt="E-commerce Reviews Analysis">
+                    <div class="project-info">
+                        <a href="#" class="project-link" onclick="openNotebook('ECOMMERCE REVIEWS ANALYSIS.ipynb')">E-commerce Reviews Analysis</a>
+                        <p>Sentiment analysis on e-commerce reviews to drive customer insights.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/loan_default.png" alt="Loan Default Prediction">
+                    <div class="project-info">
+                        <a href="#" class="project-link" onclick="openNotebook('LOAN DEFAULT PREDICTION USING NEURAL NETWORKS.ipynb')">Loan Default Prediction</a>
+                        <p>Predicting loan default risk using Neural Networks.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/netflix_recommendation.png" alt="Netflix Content Recommendation System">
+                    <div class="project-info">
+                        <a href="#" class="project-link" onclick="openNotebook('Netflix Content Recommendation system.ipynb')">Netflix Recommendation System</a>
+                        <p>Building a recommendation system for Netflix content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="content-container">
+            <h3>Certifications</h3>
+            <ul>
+                <li>Jomo Kenyatta University - Bachelors in Public Management</li>
+                <li>IBM Certified Data Scientist</li>
+                <li>Microsoft Project Management Professional</li>
+                <li>WorldQuant University - Data Science</li>
+                <li>Africa Leadership X Alumni - Data Science</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="content-container">
+            <h3>Contact</h3>
+            <p>Feel free to reach out through any of the channels listed below:</p>
+            <div class="contacts">
+                <p>+254791303899 / +254791234034</p>
+                <p>mikemurango00@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mike Murango | All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
