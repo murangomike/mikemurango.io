@@ -1,248 +1,360 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Mike Murango Portfolio<title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body> 
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike Murango - Data Scientist Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#portfolio" class="nav-link">Portfolio</a>
-            <a href="#certifications" class="nav-link">Certifications</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </div>
-    </nav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mike Murango Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+  <style>
+    body {
+      font-family: 'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
 
-    <!-- Home Section -->
-    <section id="home" class="section">
-        <div class="content-container">
-            <div class="hero-content">
-                <img src="1696259993680.jpg" alt="Mike Murango Portrait" class="portrait">
-                <div class="intro">
-                    <h1>MIKE MURANGO</h1>
-                    <h2>DATA SCIENTIST</h2>
-                    <h2>CEO NEXWAVE DATA SOLUTIONS</h2>
-                    <p>Experienced in data analytics, predictive modeling, credit risk modeling, fraud detection, recommender systems, and machine learning modeling.</p>
-                    <p> "I turn data into insights, insights into strategies, and strategies into success." </p>
-                  <div class="contacts">
-                        <a href="https://www.linkedin.com/in/mike-murango-3108b4156/" target="_blank" class="btn">LinkedIn Profile</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    nav {
+      background-color: #1d1d1f;
+      padding: 16px 0;
+    }
 
-    <!-- Services Section -->
-    <section id="services" class="section">
-        <div class="content-container">
-            <h3>Services</h3>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h4>Data Analytics</h4>
-                    <p>In-depth data analysis services to uncover valuable insights from complex datasets, driving informed decisions and business growth.</p>
-                </div>
-                <div class="service-card">
-                    <h4>Predictive Modeling</h4>
-                    <p>Building powerful predictive models to help businesses anticipate trends, optimize operations, and gain a competitive edge.</p>
-                </div>
-                <div class="service-card">
-                    <h4>Credit Risk Modeling</h4>
-                    <p>Specialized models that assess credit risk, minimizing potential losses and improving loan decision accuracy for financial institutions.</p>
-                </div>
-                <div class="service-card">
-                    <h4>Fraud Detection</h4>
-                    <p>Advanced fraud detection algorithms that identify suspicious activity, safeguarding assets and maintaining customer trust.</p>
-                </div>
-                <div class="service-card">
-                    <h4>Recommendation Systems</h4>
-                    <p>Personalized recommendation systems that enhance customer engagement and drive product discovery for e-commerce platforms.</p>
-                </div>
-                <div class="service-card">
-                    <h4>Machine Learning Solutions</h4>
-                    <p>End-to-end machine learning solutions from model development to deployment, customized to address specific business challenges.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section">
-        <div class="content-container">
-            <h3>Portfolio</h3>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="car.jpg" alt="Car Price Analysis">
-                    <div class="project-info">
-                        <a href="#" class="project-link" onclick="openNotebook('CAR_PRICE_ANALYSIS.ipynb')">Car Price Analysis</a>
-                        <p>Analyzing car prices based on various features.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="ncba.jpg" alt="NCBA Bank Employee Review Analysis">
-                    <div class="project-info">
-                        <a href="#" class="project-link" onclick="openNotebook('NCBA BANK EMPLOYEE REVIEW ANALYSIS.ipynb')">NCBA Bank Employee Review Analysis</a>
-                        <p>Analyzing employee reviews for NCBA Bank.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="footballM.jpg" alt="Football Player Predictions">
-                    <div class="project-info">
-                        <a href="#" class="project-link" onclick="openNotebook('footblal_player_predictions_using_Random_Forest_&_KNN.ipynb')">Football Player Predictions</a>
-                        <p>Predicting football player performance using Random Forest and KNN.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="insurance-claim.jpg" alt="Insurance Claim Prediction">
-                    <div class="project-info">
-                        <a href="#" class="project-link" onclick="openNotebook('insurance_claim_prediction_using_Regression_and_Random_Forest (3) (1).ipynb')">Insurance Claim Prediction</a>
-                        <p>Predicting insurance claims using Regression and Random Forest.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="churn.png" alt="Customer Churn Predictive Analytics">
-                    <div class="project-info">
-                        <a href="#" class="project-link" onclick="openNotebook('CUSTOMER CHURN PREDICTIVE ANALYTICS USING LOGISTIC REGRESSION AND NEURAL NETWORKS.ipynb')">Customer Churn Analysis</a>
-                        <p>Using Logistic Regression and Neural Networks to predict customer churn.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="reviews.png" alt="E-commerce Reviews Analysis">
-                    <div class="project-info">
-                        <a href="#" class="project-link" onclick="openNotebook('ECOMMERCE REVIEWS ANALYSIS.ipynb')">E-commerce Reviews Analysis</a>
-                        <p>Sentiment analysis on e-commerce reviews to drive customer insights.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="images.jpeg" alt="Loan Default Prediction">
-                    <div class="project-info">
-                        <a href="#" class="project-link" onclick="openNotebook('LOAN DEFAULT PREDICTION USING NEURAL NETWORKS.ipynb')">Loan Default Prediction</a>
-                        <p>Predicting loan default risk using Neural Networks.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="NetflixM.jpg" alt="Netflix Content Recommendation System">
-                    <div class="project-info">
-                        <a href="#" class="project-link" onclick="openNotebook('Netflix Content Recommendation system.ipynb')">Netflix Recommendation System</a>
-                        <p>Building a recommendation system for Netflix content.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    .nav-link {
+      color: #f5f5f7;
+      text-decoration: none;
+      margin: 0 16px;
+      transition: color 0.3s ease;
+    }
 
-<!-- Certifications Section -->
-<section id="certifications" class="section">
-    <div class="content-container certifications-box">
-        <h3 class="section-title">Certifications</h3>
-        <ul>
-            <li>IBM Certified Data Scientist</li>
-            <li>Microsoft Project Management Professional</li>
-            <li>WorldQuant University - Data Science</li>
-            <li>Africa Leadership X Alumni - Data Science</li>
-        </ul>
-    </div>
-</section>
+    .nav-link:hover {
+      color: #0071e3;
+    }
 
-<!-- Contact Section -->
-<section id="contact" class="section">
-    <div class="content-container">
-        <h3 class="section-title">Contact</h3>
-        <p>Do you want to turn your data into insights? Feel free to reach out through any of the channels below:</p>
-        <div class="contact-dropdown">
-            <button class="dropdown-btn">How can I reach you via WhatsApp or call?</button>
-            <div class="dropdown-content">
-                <p>WhatsApp/Call: +254791303899</p>
-                <p>Alternate Call: +254791234034</p>
-            </div>
-            
-            <button class="dropdown-btn">How can I email you?</button>
-            <div class="dropdown-content">
-                <p>Email: mikemurango00@gmail.com</p>
-            </div>
-        </div>
-    </div>
-</section>
+    .section {
+      padding: 40px 0;
+    }
 
-<style>
-    /* Boxed Style for Certifications */
+    .content-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .portrait {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .intro h1, .intro h2 {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .intro p {
+      margin-bottom: 16px;
+    }
+
+    .btn {
+      background-color: #0071e3;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 22px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0077ed;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 24px;
+    }
+
+    .service-card {
+      background-color: #1d1d1f;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 24px;
+    }
+
+    .project-card {
+      background-color: #1d1d1f;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 16px;
+    }
+
+    .project-link {
+      color: #0071e3;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .project-link:hover {
+      color: #0077ed;
+    }
+
     .certifications-box {
-        background-color: #2b2b2d;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        max-width: 600px;
-        margin: 20px auto;
-        color: #f5f5f7;
+      background-color: #2b2b2d;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      margin: 20px auto;
+      color: #f5f5f7;
     }
 
-    /* Title Color for Certifications and Contact Sections */
     .section-title {
-        color: #007acc; /* Distinct color for titles */
-        font-size: 1.5em;
+      color: #0071e3;
+      font-size: 1.5em;
+      margin-bottom: 16px;
     }
 
-    /* Dropdown Style for Contact Section */
     .contact-dropdown {
-        margin-top: 15px;
+      margin-top: 15px;
     }
 
     .dropdown-btn {
-        background-color: #1d1d1f;
-        color: #f5f5f7;
-        padding: 12px;
-        font-size: 16px;
-        width: 100%;
-        border: none;
-        cursor: pointer;
-        margin-bottom: 10px;
-        border-radius: 8px;
-        text-align: left;
+      background-color: #1d1d1f;
+      color: #f5f5f7;
+      padding: 12px;
+      font-size: 16px;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      text-align: left;
     }
 
     .dropdown-btn:hover {
-        background-color: #3b3b3d;
+      background-color: #3b3b3d;
     }
 
     .dropdown-content {
-        display: none;
-        padding: 10px;
-        background-color: #2b2b2d;
-        border-radius: 8px;
-        color: #f5f5f7;
-        margin-top: -10px;
-        margin-bottom: 15px;
+      display: none;
+      padding: 10px;
+      background-color: #2b2b2d;
+      border-radius: 8px;
+      color: #f5f5f7;
+      margin-top: -10px;
+      margin-bottom: 15px;
     }
 
     .dropdown-btn:focus + .dropdown-content {
-        display: block;
+      display: block;
     }
-</style>
 
+    footer {
+      background-color: #1d1d1f;
+      padding: 16px 0;
+      text-align: center;
+      color: #f5f5f7;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
 
-    <footer>
-        <p>&copy; 2024 Mike Murango | All rights reserved</p>
-    </footer>
+  <section id="home" class="section">
+    <div class="content-container">
+      <div class="hero-content">
+        <img src="1696259993680.jpg" alt="Mike Murango" class="portrait mb-8">
+        <div class="intro">
+          <h1 class="text-4xl">MIKE MURANGO</h1>
+          <h2 class="text-2xl">DATA SCIENTIST</h2>
+          <h2 class="text-2xl">CEO NEXWAVE DATA SOLUTIONS</h2>
+          <p class="text-lg mb-8">Experienced in data analytics, predictive modeling, credit risk modeling, fraud detection, recommender systems, and machine learning modeling.</p>
+          <p class="text-lg mb-8">"I turn data into insights, insights into strategies, and strategies into success."</p>
+          <a href="#" class="btn">View Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
-</body>
-</html>
-<!-- partial -->
-  <script  src="./script.js"></script>
+  <section id="services" class="section">
+    <div class="content-container">
+      <h3 class="section-title">Services</h3>
+      <div class="services-grid">
+        <div class="service-card">
+          <h4 class="text-lg font-bold mb-2">Data Analytics</h4>
+          <p>In-depth data analysis services to uncover valuable insights from complex datasets, driving informed decisions and business growth.</p>
+        </div>
+        <div class="service-card">
+          <h4 class="text-lg font-bold mb-2">Predictive Modeling</h4>
+          <p>Building powerful predictive models to help businesses anticipate trends, optimize operations, and gain a competitive edge.</p>
+        </div>
+        <div class="service-card">
+          <h4 class="text-lg font-bold mb-2">Credit Risk Modeling</h4>
+          <p>Specialized models that assess credit risk, minimizing potential losses and improving loan decision accuracy for financial institutions.</p>
+        </div>
+        <div class="service-card">
+          <h4 class="text-lg font-bold mb-2">Fraud Detection</h4>
+          <p>Advanced fraud detection algorithms that identify suspicious activity, safeguarding assets and maintaining customer trust.</p>
+        </div>
+        <div class="service-card">
+          <h4 class="text-lg font-bold mb-2">Recommendation Systems</h4>
+          <p>Personalized recommendation systems that enhance customer engagement and drive product discovery for e-commerce platforms.</p>
+        </div>
+        <div class="service-card">
+          <h4 class="text-lg font-bold mb-2">Machine Learning Solutions</h4>
+          <p>End-to-end machine learning solutions from model development to deployment, customized to address specific business challenges.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="portfolio" class="section">
+    <div class="content-container">
+      <h3 class="section-title">Portfolio</h3>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="car.jpg" alt="Car Price Analysis">
+          <div class="project-info">
+            <a href="#" class="project-link" onclick="openNotebook('CAR_PRICE_ANALYSIS.ipynb')">Car Price Analysis</a>
+            <p>Analyzing car prices based on various features.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="ncba.jpg" alt="NCBA Bank Employee Review Analysis">
+          <div class="project-info">
+            <a href="#" class="project-link" onclick="openNotebook('NCBA BANK EMPLOYEE REVIEW ANALYSIS.ipynb')">NCBA Bank Employee Review Analysis</a>
+            <p>Analyzing employee reviews for NCBA Bank.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="footballM.jpg" alt="Football Player Predictions">
+          <div class="project-info">
+            <a href="#" class="project-link" onclick="openNotebook('footblal_player_predictions_using_Random_Forest_&_KNN.ipynb')">Football Player Predictions</a>
+            <p>Predicting football player performance using Random Forest and KNN.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="insurance-claim.jpg" alt="Insurance Claim Prediction">
+          <div class="project-info">
+            <a href="#" class="project-link" onclick="openNotebook('insurance_claim_prediction_using_Regression_and_Random_Forest (3) (1).ipynb')">Insurance Claim Prediction</a>
+            <p>Predicting insurance claims using Regression and Random Forest.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="churn.png" alt="Customer Churn Predictive Analytics">
+          <div class="project-info">
+            <a href="#" class="project-link" onclick="openNotebook('CUSTOMER CHURN PREDICTIVE ANALYTICS USING LOGISTIC REGRESSION AND NEURAL NETWORKS.ipynb')">Customer Churn Analysis</a>
+            <p>Using Logistic Regression and Neural Networks to predict customer churn.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="reviews.png" alt="E-commerce Reviews Analysis">
+          <div class="project-info">
+            <a href="#" class="project-link" onclick="openNotebook('ECOMMERCE REVIEWS ANALYSIS.ipynb')">E-commerce Reviews Analysis</a>
+            <p>Sentiment analysis on e-commerce reviews to drive customer insights.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images.jpeg" alt="Loan Default Prediction">
+          <div class="project-info">
+            <a href="#" class="project-link" onclick="openNotebook('LOAN DEFAULT PREDICTION USING NEURAL NETWORKS.ipynb')">Loan Default Prediction</a>
+            <p>Predicting loan default risk using Neural Networks.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="NetflixM.jpg" alt="Netflix Content Recommendation System">
+          <div class="project-info">
+            <a href="#" class="project-link" onclick="openNotebook('Netflix Content Recommendation system.ipynb')">Netflix Recommendation System</a>
+            <p>Building a recommendation system for Netflix content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <div class="content-container certifications-box">
+      <h3 class="section-title">Certifications</h3>
+      <ul>
+        <li>IBM Certified Data Scientist</li>
+        <li>Microsoft Project Management Professional</li>
+        <li>WorldQuant University - Data Science</li>
+        <li>Africa Leadership X Alumni - Data Science</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="content-container">
+      <h3 class="section-title">Contact</h3>
+      <p>Do you want to turn your data into insights? Feel free to reach out through any of the channels below:</p>
+      <div class="contact-dropdown">
+        <button class="dropdown-btn">How can I reach you via WhatsApp or call?</button>
+        <div class="dropdown-content">
+          <p>WhatsApp/Call: +254791303899</p>
+          <p>Alternate Call: +254791234034</p>
+        </div>
+        
+        <button class="dropdown-btn">How can I email you?</button>
+        <div class="dropdown-content">
+          <p>Email: mikemurango00@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Mike Murango | All rights reserved</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.project-link').forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const notebook = event.target.getAttribute('onclick').split("'")[1];
+        window.location.href = `${notebook}`;
+      });
+    });
+  </script>
 </body>
 </html>
